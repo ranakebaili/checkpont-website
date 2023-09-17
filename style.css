@@ -1,0 +1,540 @@
+/* Reset default list styles */
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Style the navbar container */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    background-color: #fff; /* Set the background color for the navbar */
+    box-shadow: 0px 4px 6px 0px  #ababab3c; /* Add a shadow to the navbar */
+    height: 60px; /* Set the height of the navbar */
+    width: 100%;
+}
+.nav1 {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+}
+
+/* Style the navbar items */
+.nav1 a {
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    margin-right: 20px;
+}
+.dep{
+    color:#ababab;
+}
+
+.nav1 a:hover {
+    color: #00b39b;
+}
+
+/* Style the dropdown menu */
+.navwostnav {
+    display: none;
+    position: absolute;
+    padding: 12px 16px;
+    color: #ababab;
+    background-color: #fff;
+    min-width: 160px; /* Set a minimum width for the dropdown */
+    box-shadow: 0px 4px 6px 0px #ababab;
+    z-index: 1; /* Ensure the dropdown appears above other elements */
+}
+
+/* Style the dropdown items */
+.navwostnav a {
+    color: #ababab;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.navwostnav a:hover {
+    background-color: #fff;
+}
+
+/* Show the dropdown when hovering over the parent item */
+.depp:hover .navwostnav {
+    display: block;
+}
+
+/* Style the "About Us" link differently */
+.aboutus {
+    color: #00b39b;
+}
+
+/* Style the logo */
+.logonav {
+    width: 268px;
+    height: 33px;
+    max-width: 100%;
+}
+
+/* Style the parent items with dropdown */
+.dep {
+    position: relative;
+    display: inline-block;
+}
+
+
+  /*footer style*/
+  /*links li fi wost l footer style*/
+.footer a{
+    text-decoration: none;
+    color: #3d83df;
+    outline: 0;
+    transition: all .2s ease 0s;
+}
+.footer p {
+    font-size: 12px;
+    color: #ababab;
+}
+.footer {
+    border-top: 1px solid #eef2f2;
+    text-align: center;
+    padding: 1em 0;
+}
+/*ki naamlou selection loun l baghround wel ktiba yetbadel*/
+::selection {
+    background: #00b39b;
+    color: #fff;
+    text-shadow: none;
+}
+/*logo sghir fel wost*/
+.logo{
+    display: block;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+.slogan{
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.3;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: inherit;
+    margin: 1em 0;
+    font-family: 'Work Sans', Arial, sans-serif;
+    font-weight: 300;
+    letter-spacing: -.3px;
+    font-size: 2.125rem;
+    color: #00b39b;
+    text-align: center;
+}
+/*style les paras lawlin li bjnab baadhom*/
+.para1{
+    -webkit-text-size-adjust: 100%;
+    font-size: 16px;
+    font-family: 'Roboto',Arial,sans-serif;
+    color: #747474;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: inherit;
+    margin: .8em 0;
+    line-height: 1.75;
+    font-weight: 400;
+}
+/*les 2 paras bjnab baadhom*/
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(2, 500px); /* Two columns kol wahda 500px */
+    grid-template-rows: 166.591px; /* row wahda 166.591px */
+    /* Center the grid horizontally and vertically */
+    justify-content: center;
+    align-items: center;
+  }
+  .para1 {
+    padding: 10px;
+  }
+  /*style grid 2*/
+  .grid2{
+    display: grid;
+    margin-top: 50px;
+    justify-content: center;
+    grid-template-columns: repeat(3, 311.625px);
+    grid-template-rows: 345px;
+    gap: 15px;
+    margin-bottom: 50px;
+    
+     }
+     /*kol coloumn lounha wahadha*/
+  .fetha{
+    background-color: #00b39b;
+    color: #fff;
+    border-radius: 15px;
+    padding:"32px",
+  }
+  .metwasta{
+    background-color: #3d83df;
+    color:#fff;
+    border-radius: 15px;
+    padding:"32px",
+  }
+  .ghamka{
+    background-color: #1b2734;
+    color:#fff;
+    border-radius: 15px;
+    padding:"32px",
+  }
+  /*nrod l taswira wel ktiba tji baed marge*/
+  .padd{
+    display: flex;
+    flex-direction: column;
+    margin-left: 32px;
+    margin-top: 32px;
+    margin-right: 32px;
+  }
+  .tiny{
+    width: 24px;
+    height: 24px;
+  }
+  /*style titres grid*/
+  .padd h1{
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.3;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: inherit;
+    font-family: 'Work Sans',Arial,sans-serif;
+    letter-spacing: -.3px;
+    font-size: 1.625em;
+    font-weight: 400;
+    color: #fff;
+    margin: .3em 0;
+  }
+  /*style para grid*/
+  .padd h2{
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: inherit;
+    font-family: 'Work Sans',Arial,sans-serif;
+    letter-spacing: -.3px;
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0;
+    color: #fff;
+  }
+/*slogan kbal l footer*/
+  .kbalfooter{
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.3;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    box-sizing: inherit;
+    font-family: 'Work Sans',Arial,sans-serif;
+    font-weight: 300;
+    letter-spacing: -.3px;
+    margin: 0;
+    font-size: 2.1428571429em;
+    color: #333;
+    margin-bottom: .75em;
+    margin-top: 100px;
+  }
+/*bouton kbal l footer style*/
+  .btn{
+    box-sizing: inherit;
+    vertical-align: middle;
+    align-items: center;
+    outline: 0;
+    border: 0;
+    border-radius: 4px;
+    padding: 1.1666666667em 1.5em;
+    background: #3d83df;
+    font-family: 'Roboto',Arial,sans-serif;
+    line-height: 1em;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: .04em;
+    font-size: .75rem;
+    text-align: center;
+    text-decoration: none!important;
+    text-transform: uppercase;
+    transition: all .2s ease 0s;
+  }
+  /*yhotou fel wost*/
+  .mourabaa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+  /*loun yetbadel ki nenzlou alih*/
+  .btn:hover {
+    background-color: #1560bd;
+  }
+  /*tsawer*/
+  .picbled{
+    max-width: 100%;
+    height: auto
+  }
+  /*navbar li fel grid li feha tsawer*/
+  .tsawer {
+    display: grid;
+    grid-template-columns: repeat(3, 341.55px); /* Three columns */
+    grid-template-rows: repeat(3,auto); /* Three rows, set to 'auto' to adapt to content */
+    /* Center the grid horizontally and vertically */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  /*pics style*/
+  .tsawer img {
+    height: auto;
+    width: 341.55px;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+  }
+  /*containers style*/
+  .c1 {
+    border: 0.5px solid #ababab52;
+    border-radius: 7px;
+    margin-bottom: 20px;
+  }
+  .c1 p{
+    -webkit-text-size-adjust: 100%;
+    font-size: 20px;
+    font-family: 'Roboto',Arial,sans-serif;
+    color: #747474;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: inherit;
+    margin: .8em 0;
+    line-height: 1.75;
+    font-weight: 350;
+    text-decoration: none;
+  }
+  /*blue buttons style*/
+  .navtsawer {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: inherit;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    outline: 0;
+    border: 0;
+    border-radius: 4px;
+    background: #3d83df;
+    font-family: 'Roboto',Arial,sans-serif;
+    line-height: 1em;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: .04em;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .2s ease 0s;
+    font-size: .625rem;
+    padding: 1em 1.5em;
+    float: right;
+  }
+  .navtsawer a{
+    color: #fff;
+  }
+  .bled{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .c1:hover{
+    box-shadow: 0px 4px 6px 0px  #ababab57;
+  }
+  .tsawer a{
+    text-decoration: none;
+  }
+  /*loun yetbadel ki nenzlou alih*/
+  .navtsawer:hover {
+    background-color: #1560bd;
+  }
+  /*slogan 2 style*/
+  .slogan2{
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.3;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    box-sizing: inherit;
+    font-family: 'Work Sans',Arial,sans-serif;
+    font-weight: 300;
+    letter-spacing: -.3px;
+    color: #00b39b;
+    margin: 0;
+    font-size: 2.1428571429em;
+  }
+  .undersl2{
+    -webkit-text-size-adjust: 100%;
+    font-weight: 400;
+    font-family: 'Roboto',Arial,sans-serif;
+    color: #747474;
+    -webkit-font-smoothing: antialiased;
+    font-size: .875em;
+    text-align: center;
+    box-sizing: inherit;
+    margin: 1.6em 0;
+    line-height: 1.7142857143;
+    margin-left: 450.500px;
+    margin-right: 450.500px;
+    margin-bottom: 67px;
+  }
+
+
+
+
+  /*logos style*/
+  .brands{
+    box-sizing: inherit;
+    display: block;
+    zoom: 1;
+    max-width: 1015px;
+    padding: 0 20px;
+    position: relative;
+    margin: 2.5rem auto 3.125rem;
+  }
+  /*slogan bahdha l logos style*/
+  .slogan3{
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.3;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: inherit;
+    font-family: 'Work Sans',Arial,sans-serif;
+    font-weight: 300;
+    letter-spacing: -.3px;
+    color: #00b39b;
+    float: left;
+    width: 33%;
+    font-size: 1.625em;
+    margin: .25em 0 .35em;
+    padding-right: 1em;
+}
+/*grid l logos*/
+.grid4{
+    display: grid;
+    grid-template-columns: repeat(4, 163.31px); /* Three columns */
+    grid-template-rows: repeat(3,35.523px); /* Three rows, set to 'auto' to adapt to content */
+    /* Center the grid horizontally and vertically */
+    justify-content: center;
+    align-items: center;
+    gap: 17px 5px;
+}
+
+.grid4item{
+    display:flex;
+    justify-content: space-between;
+}
+/*grey color w green when hover*/
+#svgim{
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+    fill: #ababab;
+}
+#svgim:hover{
+    filter: grayscale(0%);
+}
+#svg1{
+    filter: grayscale(100%);
+  fill: gray;
+  transition: filter 0.3s ease, fill 0.3s ease;
+}
+#svg1:hover {
+    filter: grayscale(0%);
+    fill: #00b39b;
+  }
+/*slogan bg green style*/
+.slogan4{
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.3;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: inherit;
+    font-family: 'Work Sans',Arial,sans-serif;
+    font-weight: 300;
+    letter-spacing: -.3px;
+    font-size: 2.125rem;
+    color: #00b39b;
+    margin: 0;
+}
+/*para bg green style*/
+.para2{
+    -webkit-text-size-adjust: 100%;
+    font-family: Roboto,Arial,sans-serif;
+    color: #747474;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: inherit;
+    margin: 1.6em 0;
+    max-width: 415px;
+    font-size: .875em;
+    font-weight: 400;
+    line-height: 1.7142857143;
+}
+/*green background*/
+.greenbg{
+    background-color:#a2e8df;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom:40px;
+}
+.cartatitle{
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.3;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    box-sizing: inherit;
+    font-family: 'Work Sans',Arial,sans-serif;
+    font-weight: 300;
+    letter-spacing: -.3px;
+    font-size: 1.71538462em;
+    color: #00b39b;
+    margin: .5em 0;
+}
+.cartapara{
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.3;
+    font-weight: 400;
+    font-family: 'Roboto',Arial,sans-serif;
+    color: #747474;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    font-size: .8125em;
+    box-sizing: inherit;
+    margin: 0;
+}
+.cartapic{
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.3;
+    font-weight: 400;
+    font-family: 'Roboto',Arial,sans-serif;
+    color: #747474;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    font-size: .8125em;
+    box-sizing: inherit;
+    border: 0;
+    max-width: 100%;
+    height: auto;
+}
+.grid3{
+    display: grid;
+    grid-template-columns: 210.09px 210.09px; /* Two columns with specified width */
+    grid-template-rows: 250px 250px; /* Two rows with specified height */
+    gap: 15px; /* Gap between grid items */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.grid3item{
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 10px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
