@@ -472,11 +472,15 @@ ul, li {
 }
 /*green background*/
 .greenbg{
-    background-color:#a2e8df;
+    background-color:#b6eae3;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom:40px;
+    justify-content: space-around;  
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
 }
 .cartatitle{
     -webkit-text-size-adjust: 100%;
@@ -522,8 +526,8 @@ ul, li {
     grid-template-columns: 210.09px 210.09px; /* Two columns with specified width */
     grid-template-rows: 250px 250px; /* Two rows with specified height */
     gap: 15px; /* Gap between grid items */
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom:40px;
 }
 .grid3item{
     padding: 5px;
